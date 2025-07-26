@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD Mobile - Phone Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <!-- Added Lovable script tag -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<style>
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+/* Desktop */
+@media (max-width: 480px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 09876 54321</span>
+                    <span><i class="fas fa-envelope"></i> info@tdmobile.com</span>
+                </div>
+                <div class="user-actions">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user"></i> Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1 class="mb-0">TD Mobile</h1>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu mb-0">
+                    <li><a href="#" class="active">Trang chủ</a></li>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Ưu đãi</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="container">
+            <div id="mainBanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/products/banner_1.webp" class="d-block w-100" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/products/banner_2.jpg" class="d-block w-100" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/products/banner_3.jpg" class="d-block w-100" alt="Banner 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/products/banner_4.webp" class="d-block w-100" alt="Banner 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/products/banner_5.webp" class="d-block w-100" alt="Banner 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/products/banner_6.jpg" class="d-block w-100" alt="Banner 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainBanner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainBanner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... keep existing code (brands section) -->
+    <!-- <section class="brands">
+        <div class="container">
+            <div class="brand-logos">
+                <div class="brand"><img src="assets/images/logo/logoApple.webp" alt="Apple"></div>
+                <div class="brand"><img src="assets/images/logo/logoSamSung.png" alt="Samsung"></div>
+                <div class="brand"><img src="assets/images/logo/xiaomi.svg" alt="Xiaomi"></div>
+                <div class="brand"><img src="assets/images/logo/logoOppo.webp" alt="Oppo"></div>
+                <div class="brand"><img src="assets/images/logo/logoVivo-s.png" alt="Vivo"></div>
+            </div>
+        </div>
+    </section> -->
+    <section class="brands">
+        <div class="container">
+            <div class="brands-wrapper">
+                <div class="brand-logos-wrapper">
+                    <div class="brand-logos">
+                        <div class="brand"><img src="assets/images/logo/logoApple.webp" alt="Apple"></div>
+                        <div class="brand"><img src="assets/images/logo/logoSamSung.png" alt="Samsung"></div>
+                        <div class="brand"><img src="assets/images/logo/xiaomi.svg" alt="Xiaomi"></div>
+                        <div class="brand"><img src="assets/images/logo/logoOppo.webp" alt="Oppo"></div>
+                        <div class="brand"><img src="assets/images/logo/logoVivo-s.png" alt="Vivo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products with Related Products Slider -->
+    <section id="featured" class="featured-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Các sản phẩm nổi bật</h2>
+                <p>Hãy xem những chiếc điện thoại bán chạy nhất của chúng tôi trong tháng này</p>
+            </div>
+            <div class="product-grid">
+                <!-- ... keep existing code (product cards) -->
+                <div class="product-card">
+                    <div class="badge">New</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x400" alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-details">
+                        <h3>iPhone 14 Pro</h3>
+                        <div class="product-specs">
+                            <span>6.1" Super Retina XDR</span>
+                            <span>128GB</span>
+                            <span>Midnight</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$999</span>
+                            <span class="discount">$1099</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" data-product-id="1" data-product-name="iPhone 14 Pro" data-product-price="999"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="badge">Best Seller</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x400" alt="Samsung Galaxy S23">
+                    </div>
+                    <div class="product-details">
+                        <h3>Samsung Galaxy S23</h3>
+                        <div class="product-specs">
+                            <span>6.8" Dynamic AMOLED</span>
+                            <span>256GB</span>
+                            <span>Phantom Black</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$899</span>
+                            <span class="discount">$999</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" data-product-id="2" data-product-name="Samsung Galaxy S23" data-product-price="899"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="badge">Sale</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x400" alt="Google Pixel 7">
+                    </div>
+                    <div class="product-details">
+                        <h3>Google Pixel 7</h3>
+                        <div class="product-specs">
+                            <span>6.3" OLED</span>
+                            <span>128GB</span>
+                            <span>Snow</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$599</span>
+                            <span class="discount">$699</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" data-product-id="3" data-product-name="Google Pixel 7" data-product-price="599"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x400" alt="Xiaomi 13">
+                    </div>
+                    <div class="product-details">
+                        <h3>Xiaomi 13</h3>
+                        <div class="product-specs">
+                            <span>6.36" AMOLED</span>
+                            <span>256GB</span>
+                            <span>Black</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$749</span>
+                            <span class="discount">$799</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" data-product-id="4" data-product-name="Xiaomi 13" data-product-price="749"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="btn btn-outline"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products Slider -->
+            <div class="related-products mt-5">
+                <h3 class="mb-4">Có thể bạn cũng thích</h3>
+                <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="OnePlus 11">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>OnePlus 11</h3>
+                                            <div class="product-price">
+                                                <span class="price">$699</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Nothing Phone 2">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Nothing Phone 2</h3>
+                                            <div class="product-price">
+                                                <span class="price">$599</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Motorola Edge 40">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Motorola Edge 40</h3>
+                                            <div class="product-price">
+                                                <span class="price">$499</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Sony Xperia 5">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Sony Xperia 5</h3>
+                                            <div class="product-price">
+                                                <span class="price">$849</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="ASUS Zenfone 9">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>ASUS Zenfone 9</h3>
+                                            <div class="product-price">
+                                                <span class="price">$649</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Vivo X90 Pro">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Vivo X90 Pro</h3>
+                                            <div class="product-price">
+                                                <span class="price">$799</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Oppo Find X6">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Oppo Find X6</h3>
+                                            <div class="product-price">
+                                                <span class="price">$729</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-card">
+                                        <div class="product-thumb">
+                                            <img src="https://via.placeholder.com/300x400" alt="Honor Magic 5">
+                                        </div>
+                                        <div class="product-details">
+                                            <h3>Honor Magic 5</h3>
+                                            <div class="product-price">
+                                                <span class="price">$679</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... keep existing code (remaining sections - promo, categories, features, newsletter, footer) -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h2>Ưu đãi đặc biệt</h2>
+                <h3>Giảm giá 15% cho tất cả phụ kiện</h3>
+                <p>Khi bạn mua bất kỳ chiếc điện thoại nào</p>
+                <a href="#" class="btn btn-light">Mua điện thoại</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Duyệt theo danh mục</h2>
+                <p>Tìm thiết bị hoàn hảo cho nhu cầu của bạn</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-thumb">
+                        <img src="https://via.placeholder.com/400x300" alt="Flagship Phones">
+                    </div>
+                    <div class="category-details">
+                        <h3>Điện thoại hàng đầu</h3>
+                        <a href="#" class="category-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-thumb">
+                        <img src="https://via.placeholder.com/400x300" alt="Mid-range Phones">
+                    </div>
+                    <div class="category-details">
+                        <h3>Điện thoại tầm trung</h3>
+                        <a href="#" class="category-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-thumb">
+                        <img src="https://via.placeholder.com/400x300" alt="Budget Phones">
+                    </div>
+                    <div class="category-details">
+                        <h3>Điện thoại bình dân</h3>
+                        <a href="#" class="category-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3>Giao hàng nhanh</h3>
+                    <p>Dịch vụ giao hàng nhanh chóng</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Bảo hành</h3>
+                    <p>Miễn phí bảo hành đối với tất cả các lỗi do sản phẩm</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Liên hệ với chúng tôi nếu bạn cần trợ giúp</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-rotate-left"></i>
+                    <h3>Trả hàng dễ dàng</h3>
+                    <p>Bảo đảm hoàn tiền trong vòng 30 ngày</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Đăng ký nhận bản tin của chúng tôi</h2>
+                <p>Cập nhật các sản phẩm và ưu đãi mới nhất</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Địa chỉ email của bạn">
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>TD Mobile</h3>
+                    <p>Chúng tôi cung cấp điện thoại thông minh mới nhất với giá cả cạnh tranh cùng dịch vụ chăm sóc khách hàng đặc biệt.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Dịch vụ khách hàng</h3>
+                    <ul>
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Theo dõi đơn hàng</a></li>
+                        <li><a href="#">Danh sách mong muốn</a></li>
+                        <li><a href="#">Trả hàng</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Thông tin liên hệ</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Mobile Street, Tech City</li>
+                        <li><i class="fas fa-phone"></i> 09876 54321</li>
+                        <li><i class="fas fa-envelope"></i> info@tdmobile.com</li>
+                        <li><i class="fas fa-clock"></i> Thứ hai - thứ bảy: 9:00 SA- 6:00 CH</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TD Mobile. </p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none">Forgot password?</a>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-outline-primary mb-2">
+                            <i class="fab fa-google me-2"></i> Continue with Google
+                        </button>
+                        <button class="btn btn-outline-primary">
+                            <i class="fab fa-facebook-f me-2"></i> Continue with Facebook
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p class="mb-0">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <div class="text-center empty-cart">
+                    <i class="fas fa-shopping-cart fa-4x mb-3 text-muted"></i>
+                    <p>Your cart is empty</p>
+                    <a href="#featured" class="btn btn-primary" data-bs-dismiss="offcanvas">Start Shopping</a>
+                </div>
+            </div>
+            <div class="cart-summary mt-4">
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-4 fw-bold">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="btn btn-primary w-100 mb-2">Proceed to Checkout</button>
+                <button class="btn btn-outline-secondary w-100" data-bs-dismiss="offcanvas">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+        
+        // Shopping cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = [];
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartSubtotal = document.getElementById('cartSubtotal');
+            const cartTotal = document.getElementById('cartTotal');
+            const cartCount = document.querySelector('.cart-count');
+            const emptyCart = document.querySelector('.empty-cart');
+            
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    const productName = this.getAttribute('data-product-name');
+                    const productPrice = parseFloat(this.getAttribute('data-product-price'));
+                    
+                    // Check if product already in cart
+                    const existingItem = cartItems.find(item => item.id === productId);
+                    
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cartItems.push({
+                            id: productId,
+                            name: productName,
+                            price: productPrice,
+                            quantity: 1
+                        });
+                    }
+                    
+                    updateCart();
+                    
+                    // Show cart notification
+                    const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+                    cartOffcanvas.show();
+                });
+            });
+            
+            // Update cart function
+            function updateCart() {
+                if (cartItems.length === 0) {
+                    emptyCart.style.display = 'block';
+                    cartCount.textContent = '0';
+                    cartSubtotal.textContent = '$0.00';
+                    cartTotal.textContent = '$0.00';
+                    return;
+                }
+                
+                emptyCart.style.display = 'none';
+                
+                // Clear cart items container
+                while (cartItemsContainer.firstChild && !cartItemsContainer.firstChild.classList.contains('empty-cart')) {
+                    cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+                }
+                
+                let totalQuantity = 0;
+                let subtotal = 0;
+                
+                // Add each item to cart
+                cartItems.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    subtotal += itemTotal;
+                    totalQuantity += item.quantity;
+                    
+                    const cartItemElement = document.createElement('div');
+                    cartItemElement.className = 'cart-item d-flex align-items-center mb-3 pb-3 border-bottom';
+                    cartItemElement.innerHTML = `
+                        <div class="cart-item-image me-3" style="width: 60px; height: 60px; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+                            <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="cart-item-details flex-grow-1">
+                            <h6 class="mb-0">${item.name}</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="input-group input-group-sm" style="width: 100px;">
+                                    <button class="btn btn-outline-secondary decrease-quantity" data-product-id="${item.id}">-</button>
+                                    <input type="text" class="form-control text-center" value="${item.quantity}" readonly>
+                                    <button class="btn btn-outline-secondary increase-quantity" data-product-id="${item.id}">+</button>
+                                </div>
+                                <div class="ms-3">
+                                    <span>$${itemTotal.toFixed(2)}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm text-danger remove-item ms-2" data-product-id="${item.id}">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    `;
+                    
+                    cartItemsContainer.insertBefore(cartItemElement, emptyCart);
+                    
+                    // Add event listeners for quantity buttons
+                    cartItemElement.querySelector('.decrease-quantity').addEventListener('click', function() {
+                        updateItemQuantity(item.id, -1);
+                    });
+                    
+                    cartItemElement.querySelector('.increase-quantity').addEventListener('click', function() {
+                        updateItemQuantity(item.id, 1);
+                    });
+                    
+                    cartItemElement.querySelector('.remove-item').addEventListener('click', function() {
+                        removeItem(item.id);
+                    });
+                });
+                
+                // Update cart display
+                cartCount.textContent = totalQuantity;
+                cartSubtotal.textContent = '$' + subtotal.toFixed(2);
+                cartTotal.textContent = '$' + subtotal.toFixed(2);
+            }
+            
+            // Update item quantity
+            function updateItemQuantity(productId, change) {
+                const itemIndex = cartItems.findIndex(item => item.id === productId);
+                
+                if (itemIndex !== -1) {
+                    cartItems[itemIndex].quantity += change;
+                    
+                    if (cartItems[itemIndex].quantity <= 0) {
+                        cartItems.splice(itemIndex, 1);
+                    }
+                    
+                    updateCart();
+                }
+            }
+            
+            // Remove item from cart
+            function removeItem(productId) {
+                const itemIndex = cartItems.findIndex(item => item.id === productId);
+                
+                if (itemIndex !== -1) {
+                    cartItems.splice(itemIndex, 1);
+                    updateCart();
+                }
+            }
+        });
+    </script>
+
+
+<style>
+    /* General Styles - Giữ các kiểu CSS hiện tại */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-light {
+    background-color: white;
+    color: #2563eb;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #f3f4f6;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.contact-info i, .user-actions i {
+    margin-right: 5px;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    color: white;
+}
+
+nav {
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #4b5563;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #2563eb;
+}
+
+.nav-menu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2563eb;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: 1px solid #e5e7eb;
+    border-radius: 4px 0 0 4px;
+    padding: 8px 12px;
+    width: 200px;
+    flex: 1 1 auto;
+}
+
+.search-bar input:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+    z-index: 5;
+}
+
+.search-bar button {
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    border-radius: 0 4px 4px 0;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.banner-section .container{
+    max-width: 100%;
+}
+
+/* Bootstrap Modifications */
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 80px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-thumb {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-specs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.product-specs span {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-right: 10px;
+}
+
+.discount {
+    font-size: 16px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-actions .btn {
+    padding: 8px 16px;
+}
+
+.product-actions .btn-primary {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.product-actions .btn-outline {
+    width: 40px;
+    padding: 8px;
+}
+
+/* Related Products Slider */
+.related-products {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.related-products h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #2563eb;
+}
+
+#relatedProductsCarousel .carousel-control-prev,
+#relatedProductsCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+#relatedProductsCarousel .carousel-control-prev {
+    left: -50px;
+}
+
+#relatedProductsCarousel .carousel-control-next {
+    right: -50px;
+}
+
+#relatedProductsCarousel .carousel-control-prev-icon,
+#relatedProductsCarousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Login Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid #f3f4f6;
+    padding: 20px 30px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-footer {
+    border-top: 1px solid #f3f4f6;
+    padding: 20px 30px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 12px 15px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    border-color: #2563eb;
+}
+
+.btn-outline-primary {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Cart Offcanvas Styles */
+.offcanvas {
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #f3f4f6;
+    padding: 20px;
+}
+
+.offcanvas-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px); /* Header height is about 70px */
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.empty-cart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9ca3af;
+}
+
+.empty-cart i {
+    margin-bottom: 20px;
+}
+
+.empty-cart p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.cart-item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.cart-summary {
+    padding-top: 15px;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* Promo Banner - Giữ phần còn lại của CSS */
+.promo-banner {
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    color: white;
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.promo-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.promo-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.promo-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.promo-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 80px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-details {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-details h3 {
+    font-size: 18px;
+}
+
+.category-link {
+    color: #2563eb;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.category-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.category-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: #f3f4f6;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 80px 0;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.newsletter-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.newsletter-content p {
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    border-radius: 0 4px 4px 0;
+    padding: 12px 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 60px 0 30px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #374151;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.contact-info li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #374151;
+    font-size: 14px;
+}
+
+.payment-methods i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .product-grid, .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+    
+    #relatedProductsCarousel .carousel-control-prev,
+    #relatedProductsCarousel .carousel-control-next {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+    }
+
+    .contact-info, .user-actions {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .product-grid, .category-grid, .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 15px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        border-radius: 4px;
+    }
+    
+    .hero .carousel-item {
+        min-height: 350px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+</style>
+</body>
+</html>
